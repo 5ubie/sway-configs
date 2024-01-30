@@ -19,6 +19,7 @@ Names generally follow the syntax of `v[#]-[color]-[style]`.
 	
 	- A friendlier black and white scheme with transparency, rounded edges and some use of blur
 	- Requires `swaylock-effects` for screen blur and clock
+		- Similar to [default config](https://github.com/mortie/swaylock-effects?tab=readme-ov-file#swaylock-effects) but cleaner, monochrome
 		- To use with `swaylock`, remove lines `1`-`14` and set a background image or color of your choosing
 - **`v3-light-minimal`** (Jan 2024)
 	
@@ -26,6 +27,7 @@ Names generally follow the syntax of `v[#]-[color]-[style]`.
 	
 	- A minimal, flat and mostly white scheme with subtle highlighting and transparency throughout
 	- Requires `swaylock-effects` for screen blur and clock
+		- Same config as `v2` but with lighter blur tint
 		- To use with `swaylock`, remove lines `1`-`14` ...
 - **`v4-dark-minimal`** (Jan 2024)
 	
@@ -33,6 +35,7 @@ Names generally follow the syntax of `v[#]-[color]-[style]`.
 	
 	- A minimal, sleek dark scheme with subtle gradient highlights and transparency throughout
 	- Requires `swaylock-effects` for screen blur and clock
+		- Same config as `v2` but with darker blur tint
 		- To use with `swaylock`, remove lines `1`-`14` ...
 ## Usage
 Themes can be managed with the `config-update.sh` bash script or manually copied into default config folders.
