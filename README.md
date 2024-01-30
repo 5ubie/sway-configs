@@ -9,16 +9,21 @@ My system font is `IBM Plex Sans` which should be downloadable through your pack
 (I'm not smart enough to actually get a screenshot of swaylock lol)
 #### List of themes:
 - **`v1-bw-brutalist`**
+
 	![v1 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot-zoom.png?raw=true)
+	
 	- A utilitarian, opaque black and white scheme with sharp, square edges
 	- Can be used with both `swaylock` and `swaylock-effects`
 - **`v2-bw-softened`**
 	![v2 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot-zoom.png?raw=true)
+	
 	- A friendlier black and white scheme with transparency, rounded edges and some use of blur
 	- Requires `swaylock-effects` for screen blur and clock
 		- To use with `swaylock`, remove lines `1`-`14` and set a background image or color of your choosing
 - **`v3-light-minimal`**
+	
 	![v3 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot-zoom.png?raw=true)
+	
 	- A minimal, flat and mostly white scheme with subtle highlighting and transparency throughout
 	- Requires `swaylock-effects` for screen blur and clock
 ## Usage
