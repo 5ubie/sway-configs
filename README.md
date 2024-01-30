@@ -15,6 +15,7 @@ My system font is `IBM Plex Sans` which should be downloadable through your pack
 	- A utilitarian, opaque black and white scheme with sharp, square edges
 	- Can be used with both `swaylock` and `swaylock-effects`
 - **`v2-bw-softened`**
+
 	![v2 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot-zoom.png?raw=true)
 	
 	- A friendlier black and white scheme with transparency, rounded edges and some use of blur
