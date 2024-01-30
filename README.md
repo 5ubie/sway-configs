@@ -15,12 +15,10 @@ My system font is `IBM Plex Sans` which should be downloadable through your pack
 (I'm not smart enough to actually get a screenshot of swaylock lol)
 #### List of themes:
 - `v1-bw-brutalist`
-	- A harsh and opaque black and white scheme with sharp, square edges 
-		- bold and utilitarian
+	- A utilitarian, opaque black and white scheme with sharp, square edges
 	- Can be used with both `swaylock` and `swaylock-effects`
 - `v2-bw-softened`
-	- A friendlier black and white scheme with transparency, rounded edges and some use of blur 
-		- minimal and readable
+	- A friendlier black and white scheme with transparency, rounded edges and some use of blur
 	- Requires `swaylock-effects` for screen blur and clock
 		- To use with `swaylock`, remove lines `1`-`14` and set a background image or color of your choosing
 ## Usage
