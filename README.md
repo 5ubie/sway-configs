@@ -62,6 +62,6 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 | ---- | ---- |
 | **`v2-bw-softened`** | ![v2 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot.png?raw=true)![v2 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v2-swaylock-pic.jpg?raw=true) |
 | **`v3-light-minimal`** | ![v3 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot.png?raw=true) |
-| **`v4-dark-minimal`** | ![v4 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot.png?raw=true) |
+| **`v4-dark-minimal`** | ![v4 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot.png?raw=true) (Invisible focused window title fixed in `a7b337`) |
 
 (I'm not smart enough to actually get a screenshot of swaylock lol)
