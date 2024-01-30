@@ -3,11 +3,13 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     // "height": 16, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 2, // Gaps between modules (4px)
+    // "spacing": 4, // Gaps between modules (4px)
+
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
     "modules-center": ["sway/window"],
     "modules-right": ["pulseaudio", "temperature", "battery", "network", "clock"],
+
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -25,6 +27,7 @@
     //         "default": ""
     //     }
     // },
+	
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -125,8 +128,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        // "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-wifi": "",
+	"format-wifi": "",
 	"format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",

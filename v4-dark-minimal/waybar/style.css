@@ -7,7 +7,6 @@
 
 window#waybar {
     background-color: rgba(0,0,0,0.8);
-    /* border-bottom: 3px solid #000000; */
     color: rgba(255,255,255,0.85);
     transition-property: background-color;
     transition-duration: .5s;
@@ -26,14 +25,16 @@ window#waybar.solo {
 }
 */
 
+/* not sure what the following 2 do, i don't use either program - set to transparent, change if needed */
 window#waybar.termite {
-    background-color: #3F3F3F;
+    background-color: transparent;
 }
 
 window#waybar.chromium {
-    background-color: #000000;
+    background-color: transparent;
     border: none;
 }
+
 button {
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -2px transparent;
@@ -56,7 +57,6 @@ button:hover {
 }
 
 #workspaces button:hover {
-    /* background: rgba(255,255,255,0.2); */
     background-image: radial-gradient(ellipse, rgba(255,255,255,0.1) 5%, rgba(255,255,255,0.05) 50%, transparent 100%);
 }
 
@@ -67,12 +67,13 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: rgba(255,196,196,0.3);
+    background-color: rgba(255,196,196,0.2);
 }
 
 #mode {
-    background-color: rgba(128,128,255,0.3);
-    border-bottom: 3px solid #ffffff;
+    color: rgba(196,196,255,0.8);
+    background-image: radial-gradient(ellipse, rgba(164,172,255,0.24) 0%, rgba(92,100,255,0.16) 60%, transparent 100%);
+    box-shadow: inset 0 -2px rgba(255,255,255,0.2);
 }
 
 #clock,
@@ -94,6 +95,8 @@ button:hover {
     padding: 0 6px;
     color: #ffffff;
     border-radius: 2px;
+    transition-property: background-image, color;
+    transition-duration: 0.75s;
 }
 
 #window,
@@ -140,7 +143,7 @@ button:hover {
 
 #battery.critical:not(.charging) {
     color: rgba(255,196,196,1);
-    background-image: radial-gradient(ellipse, rgba(255,196,196,0.18) 4%, rgba(255,196,196,0.1) 50%, transparent 100%);
+    background-image: radial-gradient(ellipse, rgba(255,196,196,0.16) 4%, rgba(255,164,164,0.08) 50%, transparent 100%);
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -178,8 +181,10 @@ label:focus {
 }
 
 #network.disconnected {
-    background-color: rgba(255,196,196,0.2);
-    color: #ffffff;
+    /* background-color: rgba(255,196,196,0.2); */
+    background-image: radial-gradient(ellipse, rgba(255,196,196,0.16) 0%, rgba(255,164,164,0.08) 50%, transparent 100%);
+    /* animation-name: blink; */
+    color: rgba(255,204,204,1);
     padding-right: 4px;
 }
 
@@ -189,9 +194,11 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: rgba(255,196,196,0.2);
-    color: #ffffff;
+    background-image: radial-gradient(ellipse, rgba(255,196,196,0.16) 0%, rgba(255,164,164,0.08) 50%, transparent 100%);
+    color: rgba(255,204,204,1);
 }
+
+/* commented and unmodified since these modules aren't used in config
 
 #wireplumber {
     background-color: #fff0f5;
@@ -215,19 +222,20 @@ label:focus {
 #custom-media.custom-vlc {
     background-color: #ffa000;
 }
-
+*/
 #temperature {
     background-color: rgba(255,255,255,0);
     color: #ffffff;
 }
 
 #temperature.critical {
-    background-color: rgba(255,196,196,0.2);
-    color: #000000;
+    background-image: radial-gradient(ellipse, rgba(255,196,196,0.16) 0%, rgba(255,164,164,0.08) 50%, transparent 100%);
+    color: rgba(255,196,196,1);
 }
 
+/* haven't changed or tested any of the following except the scraptchpad module */
 #tray {
-    background-color: #2980b9;
+    background-color: transparent;
 }
 
 #tray > .passive {
