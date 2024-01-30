@@ -37,5 +37,6 @@ The script will automatically back up your existing configs before overwriting a
 Single digit options (i.e. `1` or `2`) were made to make managing this repository easy for me, but they can also be used to quickly store modifications you've made to loaded configs.
 
 ### Notes
-- Some files reference a wallpaper I have in my `~/Pictures` directory, my wallpaper is included in the repo
-- I've tested all this on a laptop running Fedora 39, I can't guarantee anything will work perfect on a different setup without modification
+- Some configs reference a wallpaper I have in my `~/Pictures` directory, this will need to be changed to a wallpaper of your choosing
+	- The wallpaper visible in the screenshots above is included in `assets/wallpapers/`
+- I've tested all this on a laptop running Fedora 39, things might look different on different setups
