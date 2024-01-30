@@ -2,23 +2,25 @@
 ## Overview
 Includes several "themes" which include my personal configs for `sway`, `swaylock(-effects)`, `waybar` and `dunst`.
 
-There are no dependencies apart from the above packages and their dependencies. The `sway` configs contain references to [`grim`](https://github.com/emersion/grim) (`bindsym $mod+Shift+p`), [`rofi`](https://github.com/davatorium/rofi) (default launcher), [`kitty`](https://github.com/kovidgoyal/kitty) (terminal), and have a few window assignments. rModify these settings if needed.
+There are no dependencies apart from the above packages and their dependencies. The `sway` configs contain references to [`grim`](https://github.com/emersion/grim) (`bindsym $mod+Shift+p`), [`rofi`](https://github.com/davatorium/rofi) (default launcher), [`kitty`](https://github.com/kovidgoyal/kitty) (terminal), and have a few window assignments. Modify these settings if needed.
 
 My system font is `IBM Plex Sans` which should be downloadable through your package manager, but is also available [here](https://github.com/IBM/plex/releases/tag/v6.4.0).
-
-| `v1-bw-brutalist` | `v2-bw-softened` | `v3-light-minimal` |
-| ---- | ---- | ---- |
-| ![v1 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot.png?raw=true)![v1 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot-zoom.png?raw=true) | ![v2 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot.png?raw=true)![v2 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot-zoom.png?raw=true) | ![v3 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot.png?raw=true)![v3 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot-zoom.png?raw=true) |
 
 (I'm not smart enough to actually get a screenshot of swaylock lol)
 #### List of themes:
 - `v1-bw-brutalist`
 	- A utilitarian, opaque black and white scheme with sharp, square edges
 	- Can be used with both `swaylock` and `swaylock-effects`
+	![v1 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot-zoom.png?raw=true)
 - `v2-bw-softened`
 	- A friendlier black and white scheme with transparency, rounded edges and some use of blur
 	- Requires `swaylock-effects` for screen blur and clock
 		- To use with `swaylock`, remove lines `1`-`14` and set a background image or color of your choosing
+	![v2 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot-zoom.png?raw=true)
+- `v3-light-minimal`
+	- A minimal, flat and mostly white scheme with subtle highlighting and transparency throughout
+	- Requires `swaylock-effects` for screen blur and clock
+	![v3 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot-zoom.png?raw=true)
 ## Usage
 Themes can be managed with the `config-update.sh` bash script or manually copied into default config folders.
 
@@ -38,3 +40,8 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 - Some configs reference a wallpaper I have in my `~/Pictures` directory, this will need to be changed to a wallpaper of your choosing
 	- The wallpaper visible in the screenshots above is included in `assets/wallpapers/`
 - I've tested all this on a laptop running Fedora 39, things might look different on different setups
+
+#### More Screenshots
+| `v1-bw-brutalist` | `v2-bw-softened` | `v3-light-minimal` |
+| ---- | ---- | ---- |
+| ![v1 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot.png?raw=true)![v1 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot-zoom.png?raw=true)![v1 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v1-swaylock-pic.jpg?raw=true) | ![v2 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot.png?raw=true)![v2 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot-zoom.png?raw=true)![v2 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v2-swaylock-pic.jpg?raw=true) | ![v3 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot.png?raw=true)![v3 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot-zoom.png?raw=true)![v2 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v2-swaylock-pic.jpg?raw=true) |
