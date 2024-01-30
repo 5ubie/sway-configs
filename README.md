@@ -1,4 +1,4 @@
-# A Collection of sway config files
+# A Collection of Sway Config Files
 ## Overview
 Includes several "themes" which include my personal configs for `sway`, `swaylock(-effects)`, `waybar` and `dunst`.
 
