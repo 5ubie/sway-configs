@@ -28,15 +28,16 @@ Names generally follow the syntax of `v[#]-[color]-[style]`.
 	- A minimal, flat and mostly white scheme with subtle highlighting and transparency throughout
 	- Requires `swaylock-effects` for screen blur and clock
 		- Same config as `v2` but with lighter blur tint
-		- To use with `swaylock`, remove lines `1`-`14` ...
+		- To use with `swaylock`, remove lines `1`-`14`
 - **`v4-dark-minimal`** (Jan 2024)
 	
 	![v4 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot-zoom.png?raw=true)
 	
 	- A minimal, sleek dark scheme with subtle gradient highlights and transparency throughout
+		- Adds smooth transitions to conditional color accents
 	- Requires `swaylock-effects` for screen blur and clock
 		- Same config as `v2` but with darker blur tint
-		- To use with `swaylock`, remove lines `1`-`14` ...
+		- To use with `swaylock`, remove lines `1`-`14`
 ## Usage
 Themes can be managed with the `config-update.sh` bash script or manually copied into default config folders.
 
@@ -64,4 +65,4 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 | **`v3-light-minimal`** | ![v3 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot.png?raw=true) |
 | **`v4-dark-minimal`** | ![v4 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot.png?raw=true) (Invisible focused window title fixed in `a7b337`) |
 
-(I'm not smart enough to actually get a screenshot of swaylock lol)
+(Someday I'll figure out how to get a screenshot of swaylock)

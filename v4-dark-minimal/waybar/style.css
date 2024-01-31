@@ -9,7 +9,7 @@ window#waybar {
     background-color: rgba(0,0,0,0.8);
     color: rgba(255,255,255,0.85);
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
@@ -128,7 +128,7 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    color: rgba(196,255,212,1);
+    color: rgba(204,255,220,1);
     background-image: radial-gradient(ellipse, rgba(196,255,212,0.18) 4%, rgba(196,255,212,0.1) 50%, transparent 100%);
     /* background-color: rgba(196,255,212,0); */
     border-radius: 2px;
