@@ -33,6 +33,7 @@ Names generally follow the syntax of `v[#]-[color]-[style]`.
 	
 	![v4 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot-zoom.png?raw=true)
 	
+	![v4 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot-zoom2.png?raw=true)
 	- A minimal, sleek dark scheme with subtle gradient highlights and transparency throughout
 		- Adds smooth transitions to conditional color accents
 	- Requires `swaylock-effects` for screen blur and clock
