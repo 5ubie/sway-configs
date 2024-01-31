@@ -1,11 +1,10 @@
 # A Collection of Sway Config Files
-## Overview
 Includes several "themes" which include my personal configs for `sway`, `swaylock(-effects)`, `waybar` and `dunst`.
 
 There are no dependencies apart from the above packages and their dependencies. The `sway` configs contain references to [`grim`](https://github.com/emersion/grim) (`bindsym $mod+Shift+p`), [`rofi`](https://github.com/davatorium/rofi) (default launcher), [`kitty`](https://github.com/kovidgoyal/kitty) (terminal), and have a few window assignments. Modify these settings if needed.
 
 My system font is `IBM Plex Sans` which should be downloadable through your package manager, but is also available [here](https://github.com/IBM/plex/releases/tag/v6.4.0).
-#### List of themes:
+### Themes
 Names generally follow the syntax of `v[#]-[color]-[style]`.
 - **`v1-bw-brutalist`** (Dec 2023)
 
@@ -51,17 +50,25 @@ Once configs have been changed, running the batch file and selecting one of the 
 The script will automatically back up your existing configs before overwriting any system files.
 
 Single digit options (i.e. `1` or `2`) were made to make managing this repository easy for me, but they can also be used to quickly store modifications you've made to loaded configs.
-
 ### Notes
 - Some configs reference a wallpaper I have in my `~/Pictures` directory, this will need to be changed to a wallpaper of your choosing
 	- The wallpaper visible in the screenshots above is included in `assets/wallpapers/`
 - I've tested all this on a laptop running Fedora 39, things might look different on different setups
-
+- For displays > 1080p, font sizes will probably need to be changed
+### Todo
+- Rofi themes + script implementation will be added soon
+- Config files will be cleaned up, made more consistent soon 
+- New `sway` configs that omit most of my input/output/keybind settings will be added soon alongside an install option in the script
+- Make some more colorful themes with more eyecandy
+	- Terminal schemes like everforest, rose pine, nord, catpuccin, solarized, tokyo night, etc.
+	- More animations and transitions
+- Transition to a simpler theme naming scheme
+	- Something like: `[style]-[color scheme]-[iteration]`
 ### More Screenshots
 | `v1-bw-brutalist` | ![v1 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot.png?raw=true)![v1 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v1-swaylock-pic.jpg?raw=true) |
 | ---- | ---- |
 | **`v2-bw-softened`** | ![v2 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot.png?raw=true)![v2 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v2-swaylock-pic.jpg?raw=true) |
 | **`v3-light-minimal`** | ![v3 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot.png?raw=true) |
-| **`v4-dark-minimal`** | ![v4 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot2.png?raw=true) (Invisible focused window title fixed in `a7b337`) |
+| **`v4-dark-minimal`** | ![v4 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot2.png?raw=true)  |
 
-(Someday I'll figure out how to get a screenshot of swaylock)
+(I don't know how to take a screenshot of swaylock lol)
