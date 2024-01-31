@@ -50,7 +50,7 @@ Once configs have been changed, running the batch file and selecting one of the 
 The script will automatically back up your existing configs before overwriting any system files.
 
 Single digit options (i.e. `1` or `2`) were made to make managing this repository easy for me, but they can also be used to quickly store modifications you've made to loaded configs.
-### Notes
+## Notes
 - Some configs reference a wallpaper I have in my `~/Pictures` directory, this will need to be changed to a wallpaper of your choosing
 	- The wallpaper visible in the screenshots above is included in `assets/wallpapers/`
 - I've tested all this on a laptop running Fedora 39, things might look different on different setups
