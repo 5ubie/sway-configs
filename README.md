@@ -31,8 +31,6 @@ Names generally follow the syntax of `v[#]-[color]-[style]`.
 		- To use with `swaylock`, remove lines `1`-`14`
 - **`v4-dark-minimal`** (Jan 2024)
 	
-	![v4 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot-zoom.png?raw=true)
-	
 	![v4 zoom screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot-zoom2.png?raw=true)
 	- A minimal, sleek dark scheme with subtle gradient highlights and transparency throughout
 		- Adds smooth transitions to conditional color accents
@@ -64,6 +62,6 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 | ---- | ---- |
 | **`v2-bw-softened`** | ![v2 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v2-screenshot.png?raw=true)![v2 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v2-swaylock-pic.jpg?raw=true) |
 | **`v3-light-minimal`** | ![v3 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v3-screenshot.png?raw=true) |
-| **`v4-dark-minimal`** | ![v4 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot.png?raw=true) (Invisible focused window title fixed in `a7b337`) |
+| **`v4-dark-minimal`** | ![v4 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v4-screenshot2.png?raw=true) (Invisible focused window title fixed in `a7b337`) |
 
 (Someday I'll figure out how to get a screenshot of swaylock)
