@@ -56,17 +56,17 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 - I've tested all this on a laptop running Fedora 39, things might look different on different setups
 - For displays > 1080p, font sizes will probably need to be changed
 ### Todo
-- Handle includedwallpaper better
+- [ ] Handle included wallpaper better
 	- Have config copy to a designated directory, reflect in configs
 	- Add a handful of extra wallpaper options
-- Add rofi themes + script implementation
-- Clean up config and .css files - more consistent and readable
-- New `sway` configs that omit most of my input/output/keybind settings + respective install options in the script
-- Make some more colorful themes with more eyecandy
-	- Terminal schemes like everforest, rose pine, nord, catpuccin, solarized, tokyo night, etc.
-	- More animations and transitions
-- Transition to a simpler theme naming scheme
-	- Something like: `[style]-[color scheme]-[iteration]`
+- [ ] Add rofi themes + script implementation
+- [ ] Clean up config and .css files - more consistent and readable
+- [ ] Make new `sway` configs that omit modified input/output/keybind settings, add respective install options in the script
+- [ ] *Make some more colorful themes with more eyecandy*
+	- *Terminal schemes like everforest, rose pine, nord, catpuccin, solarized, tokyo night, etc.*
+	- *More animations and transitions*
+- [ ] *Transition to a simpler theme naming scheme*
+	- *Something like: `[style]-[color scheme]-[iteration]`*
 ### More Screenshots
 | `v1-bw-brutalist` | ![v1 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot.png?raw=true)![v1 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v1-swaylock-pic.jpg?raw=true) |
 | ---- | ---- |
