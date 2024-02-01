@@ -56,9 +56,8 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 - I've tested all this on a laptop running Fedora 39, things might look different on different setups
 - For displays > 1080p, font sizes will probably need to be changed
 ### Todo
-- [ ] Handle included wallpaper better
-	- Have config copy to a designated directory, reflect in configs
-	- Add a handful of extra wallpaper options
+- [x] Handle included wallpaper better: have script copy to a designated directory, reflect in configs
+- [ ] Add a handful of extra wallpaper options
 - [ ] Add rofi themes + script implementation
 - [ ] Clean up config and .css files - more consistent and readable
 - [ ] Make new `sway` configs that omit modified input/output/keybind settings, add respective install options in the script

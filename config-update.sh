@@ -80,16 +80,20 @@ elif [ $choice == "10" ]; then
 	sudo cp /etc/sway/config "backups/backup-[$dtstr]/sway/config-[_etc_sway]"
 	sudo cp /etc/swaylock/config "backups/backup-[$dtstr]/swaylock/config-[_etc_swaylock]"
 	# copy user config files to backup
-	sudo cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
-	sudo cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
+	cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
+	cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
 	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
 	
+	# copy wallpapers to ~/Pictures
+	mkdir -p ~/Pictures/sway-wallpapers/
+	sudo cp -r assets/wallpapers/ ~/Pictures/sway-wallpapers/
+	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"	
 	# copy v1-bw-brutalist files to system
 	sudo cp v1-bw-brutalist/dunst/dunstrc /etc/xdg/dunst/
 	sudo cp v1-bw-brutalist/waybar/config /etc/xdg/waybar/
 	sudo cp v1-bw-brutalist/waybar/style.css /etc/xdg/waybar/
-	sudo cp v1-bw-brutalist/sway/config ~/.config/sway/
-	sudo cp v1-bw-brutalist/swaylock/config ~/.config/swaylock/
+	cp v1-bw-brutalist/sway/config ~/.config/sway/
+	cp v1-bw-brutalist/swaylock/config ~/.config/swaylock/
 	echo "All 'v1-bw-brutalist' config files copied to default config locations."
 	# reload wm
 	echo "Reloading sway..."
@@ -111,16 +115,20 @@ elif [ $choice == "20" ]; then
 	sudo cp /etc/sway/config "backups/backup-[$dtstr]/sway/config-[_etc_sway]"
 	sudo cp /etc/swaylock/config "backups/backup-[$dtstr]/swaylock/config-[_etc_swaylock]"
 	# copy user config files to backup
-	sudo cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
-	sudo cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
+	cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
+	cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
 	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
 
+	# copy wallpapers to ~/Pictures
+	mkdir -p ~/Pictures/sway-wallpapers/
+	sudo cp -r assets/wallpapers/ ~/Pictures/sway-wallpapers/
+	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"		
 	# copy v2-bw-softened files to system
 	sudo cp v2-bw-softened/dunst/dunstrc /etc/xdg/dunst/
 	sudo cp v2-bw-softened/waybar/config /etc/xdg/waybar/
 	sudo cp v2-bw-softened/waybar/style.css /etc/xdg/waybar/
-	sudo cp v2-bw-softened/sway/config ~/.config/sway/
-	sudo cp v2-bw-softened/swaylock/config ~/.config/swaylock/
+	cp v2-bw-softened/sway/config ~/.config/sway/
+	cp v2-bw-softened/swaylock/config ~/.config/swaylock/
 	echo "All 'v2-bw-softened' config files copied to default config locations.\nReloading sway..."
 	swaymsg reload
 	pkill dunst
@@ -140,16 +148,20 @@ elif [ $choice == "30" ]; then
 	sudo cp /etc/sway/config "backups/backup-[$dtstr]/sway/config-[_etc_sway]"
 	sudo cp /etc/swaylock/config "backups/backup-[$dtstr]/swaylock/config-[_etc_swaylock]"
 	# copy user config files to backup
-	sudo cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
-	sudo cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
+	cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
+	cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
 	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
 
+	# copy wallpapers to ~/Pictures
+	mkdir -p ~/Pictures/sway-wallpapers/
+	cp -r assets/wallpapers/* ~/Pictures/sway-wallpapers
+	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"
 	# copy v3-light-minimal files to system
 	sudo cp v3-light-minimal/dunst/dunstrc /etc/xdg/dunst/
 	sudo cp v3-light-minimal/waybar/config /etc/xdg/waybar/
 	sudo cp v3-light-minimal/waybar/style.css /etc/xdg/waybar/
-	sudo cp v3-light-minimal/sway/config ~/.config/sway/
-	sudo cp v3-light-minimal/swaylock/config ~/.config/swaylock/
+	cp v3-light-minimal/sway/config ~/.config/sway/
+	cp v3-light-minimal/swaylock/config ~/.config/swaylock/
 	echo "All 'v3-light-minimal' config files copied to default config locations.\nReloading sway..."
 	swaymsg reload
 	pkill dunst
@@ -169,16 +181,20 @@ elif [ $choice == "40" ]; then
 	sudo cp /etc/sway/config "backups/backup-[$dtstr]/sway/config-[_etc_sway]"
 	sudo cp /etc/swaylock/config "backups/backup-[$dtstr]/swaylock/config-[_etc_swaylock]"
 	# copy user config files to backup
-	sudo cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
-	sudo cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
+	cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
+	cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
 	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
 
+	# copy wallpapers to ~/Pictures
+	mkdir -p ~/Pictures/sway-wallpapers/
+	cp -r assets/wallpapers/* ~/Pictures/sway-wallpapers
+	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"
 	# copy v4-dark-minimal files to system
 	sudo cp v4-dark-minimal/dunst/dunstrc /etc/xdg/dunst/
 	sudo cp v4-dark-minimal/waybar/config /etc/xdg/waybar/
 	sudo cp v4-dark-minimal/waybar/style.css /etc/xdg/waybar/
-	sudo cp v4-dark-minimal/sway/config ~/.config/sway/
-	sudo cp v4-dark-minimal/swaylock/config ~/.config/swaylock/
+	cp v4-dark-minimal/sway/config ~/.config/sway/
+	cp v4-dark-minimal/swaylock/config ~/.config/swaylock/
 	echo "All 'v4-dark-minimal' config files copied to default config locations.\nReloading sway..."
 	swaymsg reload
 	pkill dunst

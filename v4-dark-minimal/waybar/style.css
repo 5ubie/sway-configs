@@ -1,3 +1,9 @@
+@keyframes blink {
+    to {
+        background-image: radial-gradient(ellipse, rgba(255,196,196,0.24) 0%, rgba(255,164,164,0.12) 40%, transparent 100%);
+    }
+}
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "IBM Plex Sans", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -41,6 +47,8 @@ button {
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 2px;
+    transition-property: color;
+    transition-duration: 0.5s;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -67,7 +75,14 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: rgba(255,196,196,0.2);
+    color: rgba(255,196,196,1);
+    background-image: radial-gradient(ellipse, rgba(0,0,0,0.24) 4%, rgba(0,0,0,0.12) 50%, transparent 100%);
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
 }
 
 #mode {
@@ -134,19 +149,12 @@ button:hover {
     border-radius: 2px;
 }
 
-@keyframes blink {
-    to {
-        background-color: rgba(255,196,196,1);
-        color: #ffffff;
-    }
-}
-
 #battery.critical:not(.charging) {
     color: rgba(255,196,196,1);
-    background-image: radial-gradient(ellipse, rgba(255,196,196,0.16) 4%, rgba(255,164,164,0.08) 50%, transparent 100%);
+    background-image: radial-gradient(ellipse, rgba(0,0,0,0.24) 4%, rgba(0,0,0,0.12) 50%, transparent 100%);
     animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
