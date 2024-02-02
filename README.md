@@ -35,18 +35,17 @@ My system font is `IBM Plex Sans` which should be downloadable through your pack
 		- To use with `swaylock`, remove lines `1`-`14`
 ## Usage
 Themes can be managed with the `config-update.sh` bash script or manually copied into default config folders.
-
-The `sway` configs should be reviewed and modified before loading them - input, output and keybind settings will likely have to be changed. Do so by copying over parts of your own config file or by commenting them out entirely.
-
-Once configs have been changed, running the batch file and selecting one of the `[#]0` options (i.e. `10` or `20`) will copy the respective configs to the following locations:
-- dunst: `~/.config/dunst/`
-- sway: `~/.config/sway/`
-- swaylock: `~/.config/swaylock/`
-- waybar: `~/.config/waybar/`
-- rofi: `/usr/share/rofi/`
-
-Included wallpapers will be copied to `~/Pictures/sway-wallpapers/`
-The script will automatically back up your existing configs before overwriting any system files.
+- The `sway` configs should be reviewed and modified before loading 
+	- Input, output and keybind settings will likely have to be changed
+- The script will automatically back up your existing configs before making any changes.
+- Running the batch file and selecting one of the `[#]0` options (i.e. `10` or `20`) will copy the respective configs to the following locations:
+	- dunst: `~/.config/dunst/`
+	- sway: `~/.config/sway/`
+	- swaylock: `~/.config/swaylock/`
+	- waybar: `~/.config/waybar/`
+	- rofi: `/usr/share/rofi/`
+- Included wallpapers will be copied to `~/Pictures/sway-wallpapers/`
+- Rofi themes will have to be manually set with rofi's theme selector
 
 Single digit options (i.e. `1` or `2`) were made to make managing this repository easy for me, but they can also be used to quickly store modifications you've made to loaded configs.
 ## Notes
@@ -56,14 +55,18 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 - [x] Handle included wallpaper better: have script copy to a designated directory, reflect in configs
 - [x] Add a handful of extra wallpaper options
 - [x] Add rofi themes + script implementation
+- [x] Update fluid rofi themes
+- [ ] Change directory for rofi themes to `./local/...`
 - [ ] Incorporate some gradients and transitions from `fluid-dark` into `fluid-light`
-- [ ] Clean up config and .css files - more consistent and readable
-- [ ] Make new `sway` configs that omit modified input/output/keybind settings, add respective install options in the script
 - [ ] *Make some more colorful themes with more eyecandy*
 	- *Terminal schemes like everforest, rose pine, nord, catpuccin, solarized, tokyo night, etc.*
 	- *More animations and transitions*
 - [x] *Transition to a simpler theme naming scheme*
 	- *Something like: `[style]-[color scheme]-[iteration]`*
+
+Long term:
+- [ ] Make new `sway` configs that omit modified input/output/keybind settings, add respective install options in the script
+- [ ] Clean up config and .css files - more consistent and readable
 - [ ] *Add some sort of `stow` support*
 ### More Screenshots
 | `brutalist-bw` | ![v1 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot.png?raw=true)![v1 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v1-swaylock-pic.jpg?raw=true) |
