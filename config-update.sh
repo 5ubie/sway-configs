@@ -107,6 +107,7 @@ elif [ $choice == "10" ]; then
 	cp -r brutalist-bw/waybar/* ~/.config/waybar/
 	cp -r brutalist-bw/sway/* ~/.config/sway/
 	cp -r brutalist-bw/swaylock/* ~/.config/swaylock/
+	sudo cp -r brutalist-bw/rofi/* /usr/share/rofi/themes/
 	### sudo cp -r brutalist-bw/rofi/* /usr/share/rofi/
 	echo "All 'brutalist-bw' config files copied to default config locations."
 	echo "Reloading sway..."
@@ -140,6 +141,7 @@ elif [ $choice == "20" ]; then
 	cp -r cards-bw/waybar/* ~/.config/waybar/
 	cp -r cards-bw/sway/* ~/.config/sway/
 	cp -r cards-bw/swaylock/* ~/.config/swaylock/
+	sudo cp -r cards-bw/rofi/* /usr/share/rofi/themes/
 	### sudo cp -r cards-bw/rofi/* /usr/share/rofi/
 	echo "All 'cards-bw' config files copied to default config locations."
 	echo "Reloading sway..."
@@ -173,6 +175,7 @@ elif [ $choice == "30" ]; then
 	cp -r fluid-light/waybar/* ~/.config/waybar/
 	cp -r fluid-light/sway/* ~/.config/sway/
 	cp -r fluid-light/swaylock/* ~/.config/swaylock/
+	sudo cp -r fluid-light/rofi/* /usr/share/rofi/themes/
 	### sudo cp -r fluid-light/rofi/* /usr/share/rofi/
 	echo "All 'fluid-light' config files copied to default config locations."
 	echo "Reloading sway..."
@@ -206,6 +209,7 @@ elif [ $choice == "40" ]; then
 	cp -r fluid-dark/waybar/* ~/.config/waybar/
 	cp -r fluid-dark/sway/* ~/.config/sway/
 	cp -r fluid-dark/swaylock/* ~/.config/swaylock/
+	sudo cp -r fluid-dark/rofi/* /usr/share/rofi/themes/
 	### sudo cp -r fluid-dark/rofi/* /usr/share/rofi/
 	echo "All 'fluid-dark' config files copied to default config locations."
 	echo "Reloading sway..."
