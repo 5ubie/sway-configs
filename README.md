@@ -25,7 +25,6 @@ My system font is `IBM Plex Sans` which should be downloadable through your pack
 	
 	- A minimal, flat and mostly white scheme with subtle highlighting and transparency throughout
 	- Requires `swaylock-effects` for screen blur and clock
-		- Same config as `v2` but with lighter blur tint
 		- To use with `swaylock`, remove lines `1`-`14`
 - **`fluid-dark`** (Jan 2024)
 	
@@ -33,7 +32,6 @@ My system font is `IBM Plex Sans` which should be downloadable through your pack
 	- A minimal, sleek dark scheme with subtle gradient highlights and transparency throughout
 		- Adds smooth transitions to conditional color accents
 	- Requires `swaylock-effects` for screen blur and clock
-		- Same config as `v2` but with darker blur tint
 		- To use with `swaylock`, remove lines `1`-`14`
 ## Usage
 Themes can be managed with the `config-update.sh` bash script or manually copied into default config folders.
@@ -45,6 +43,7 @@ Once configs have been changed, running the batch file and selecting one of the 
 - sway: `~/.config/sway/`
 - swaylock: `~/.config/swaylock/`
 - waybar: `~/.config/waybar/`
+- rofi: `/usr/share/rofi/`
 
 Included wallpapers will be copied to `~/Pictures/sway-wallpapers/`
 The script will automatically back up your existing configs before overwriting any system files.
@@ -64,6 +63,7 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 	- *More animations and transitions*
 - [x] *Transition to a simpler theme naming scheme*
 	- *Something like: `[style]-[color scheme]-[iteration]`*
+- [ ] *Add some sort of `stow` support*
 ### More Screenshots
 | `brutalist-bw` | ![v1 full screenshot](https://github.com/5ubie/sway-configs/blob/main/assets/v1-screenshot.png?raw=true)![v1 swaylock pic](https://github.com/5ubie/sway-configs/blob/main/assets/v1-swaylock-pic.jpg?raw=true) |
 | ---- | ---- |
