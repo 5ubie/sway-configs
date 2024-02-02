@@ -56,7 +56,7 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 - [x] Handle included wallpaper better: have script copy to a designated directory, reflect in configs
 - [x] Add a handful of extra wallpaper options
 - [x] Add rofi themes + script implementation
-- [ ] Incorporate some gradients and transitions from `fluid-dark` into `fluid-dark`
+- [ ] Incorporate some gradients and transitions from `fluid-dark` into `fluid-light`
 - [ ] Clean up config and .css files - more consistent and readable
 - [ ] Make new `sway` configs that omit modified input/output/keybind settings, add respective install options in the script
 - [ ] *Make some more colorful themes with more eyecandy*
