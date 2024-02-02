@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# cd to script location
+cd "$(dirname "$0")"
 # grab date and time for backup directory naming
 dtstr=$(date +"%Y-%m-%d_%H-%M-%S")
 # display prompt
