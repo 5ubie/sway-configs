@@ -2,7 +2,21 @@
 # grab date and time for backup directory naming
 dtstr=$(date +"%Y-%m-%d_%H-%M-%S")
 # display prompt
-printf "\nSelect an option:\n-----------------\n[1]  Copy current configs to 'v1' repo folder\n[2]  Copy current configs to 'v2' repo folder\n[3]  Copy current configs to 'v3' repo folder\n[4]  Copy current configs to 'v4' repo folder\n[10] Copy & load 'v1' config to system\n[20] Copy & load 'v2' config to system\n[30] Copy & load 'v3' config to system\n[40] Copy & load 'v4' config to system\n\n[e]  Exit prompt\n-----------------\n> "
+printf "\n Select an option:
+┌──────────────────────────────────────┐
+│ [1]  Svae current to brutalist-bw/   │
+│ [2]  Save current to cards-bw/       │
+│ [3]  Save current to fluid-light/    │
+│ [4]  Save current to fluid-dark/     │
+├──────────────────────────────────────┤
+│ [10] Load brutalist-bw/              │
+│ [20] Load cards-bw/                  │
+│ [30] Load fluid-light/               │
+│ [40] Load fluid-dark/                │
+└──────────────────────────────────────┘
+ [e]  Exit prompt
+
+> "
 read choice
 # if-else tree
 if [ $choice == "1" ]; then
@@ -11,12 +25,13 @@ if [ $choice == "1" ]; then
 	read confv1
 	if [ $confv1 == "y" ]; then
 		# copy current loaded configs to repo directory
-		sudo cp /etc/xdg/dunst/dunstrc "v1-bw-brutalist/dunst/"
-		sudo cp /etc/xdg/waybar/config "v1-bw-brutalist/waybar/"
-		sudo cp /etc/xdg/waybar/style.css "v1-bw-brutalist/waybar/"
-		sudo cp ~/.config/sway/config "v1-bw-brutalist/sway/"
-		sudo cp ~/.config/swaylock/config "v1-bw-brutalist/swaylock/"
-		echo "All 5 config files copied to sway-config/v1-bw-brutalist/"
+		cp -r ~/.config/dunst/* "brutalist-bw/dunst/"
+		cp -r ~/.config/waybar/* "brutalist-bw/waybar/"
+		cp -r ~/.config/waybar/* "brutalist-bw/waybar/"
+		cp -r ~/.config/sway/* "brutalist-bw/sway/"
+		cp -r ~/.config/swaylock/* "brutalist-bw/swaylock/"
+		sudo cp /usr/share/rofi/themes/brutalist-bw.rasi "brutalist-bw/rofi/themes/"
+		echo "All config files copied to brutalist-bw/"
 	elif [ $confv1 == "N" ]; then
 		echo "Cancelled."
 	fi
@@ -26,12 +41,13 @@ elif [ $choice == "2" ]; then
 	read confv2
 	if [ $confv2 == "y" ]; then
 		# copy current loaded configs to repo directory
-		sudo cp /etc/xdg/dunst/dunstrc "v2-bw-softened/dunst/"
-		sudo cp /etc/xdg/waybar/config "v2-bw-softened/waybar/"
-		sudo cp /etc/xdg/waybar/style.css "v2-bw-softened/waybar/"
-		sudo cp ~/.config/sway/config "v2-bw-softened/sway/"
-		sudo cp ~/.config/swaylock/config "v2-bw-softened/swaylock/"
-		echo "All 5 config files copied to sway-configs/v2-bw-softened/"
+		cp -r ~/.config/dunst/* "cards-bw/dunst/"
+		cp -r ~/.config/waybar/* "cards-bw/waybar/"
+		cp -r ~/.config/waybar/* "cards-bw/waybar/"
+		cp -r ~/.config/sway/* "cards-bw/sway/"
+		cp -r ~/.config/swaylock/* "cards-bw/swaylock/"
+		sudo cp /usr/share/rofi/themes/cards-bw.rasi "cards-bw/rofi/themes/"
+		echo "All config files copied to cards-bw/"
 	elif [ $confv2 == "N" ]; then
 		echo "Cancelled."
 	fi
@@ -41,12 +57,13 @@ elif [ $choice == "3" ]; then
 	read confv3
 	if [ $confv3 == "y" ]; then
 		# copy current loaded configs to repo directory
-		sudo cp /etc/xdg/dunst/dunstrc "v3-light-minimal/dunst/"
-		sudo cp /etc/xdg/waybar/config "v3-light-minimal/waybar/"
-		sudo cp /etc/xdg/waybar/style.css "v3-light-minimal/waybar/"
-		sudo cp ~/.config/sway/config "v3-light-minimal/sway/"
-		sudo cp ~/.config/swaylock/config "v3-light-minimal/swaylock/"
-		echo "All 5 config files copied to sway-configs/v3-light-minimal/"
+		cp -r ~/.config/dunst/* "fluid-light/dunst/"
+		cp -r ~/.config/waybar/* "fluid-light/waybar/"
+		cp -r ~/.config/waybar/* "fluid-light/waybar/"
+		cp -r ~/.config/sway/* "fluid-light/sway/"
+		cp -r ~/.config/swaylock/* "fluid-light/swaylock/"
+		sudo cp /usr/share/rofi/themes/fluid-light.rasi "cards-bw/rofi/themes/"
+		echo "All config files copied to fluid-light/"
 	elif [ $confv2 == "N" ]; then
 		echo "Cancelled."
 	fi
@@ -56,150 +73,147 @@ elif [ $choice == "4" ]; then
 	read confv4
 	if [ $confv4 == "y" ]; then
 		# copy current loaded configs to repo directory
-		sudo cp /etc/xdg/dunst/dunstrc "v4-dark-minimal/dunst/"
-		sudo cp /etc/xdg/waybar/config "v4-dark-minimal/waybar/"
-		sudo cp /etc/xdg/waybar/style.css "v4-dark-minimal/waybar/"
-		sudo cp ~/.config/sway/config "v4-dark-minimal/sway/"
-		sudo cp ~/.config/swaylock/config "v4-dark-minimal/swaylock/"
-		echo "All 5 config files copied to sway-configs/v4-dark-minimal/"
+		cp -r ~/.config/dunst/* "fluid-dark/dunst/"
+		cp -r ~/.config/waybar/* "fluid-dark/waybar/"
+		cp -r ~/.config/waybar/* "fluid-dark/waybar/"
+		cp -r ~/.config/sway/* "fluid-dark/sway/"
+		cp -r ~/.config/swaylock/* "fluid-dark/swaylock/"
+		sudo cp /usr/share/rofi/themes/fluid-dark.rasi "fluid-dark/rofi/themes/"
 	elif [ $confv2 == "N" ]; then
 		echo "Cancelled."
 	fi
 elif [ $choice == "10" ]; then
 	# make backup directory
-	mkdir -p "backups/"
 	mkdir -p "backups/backup-[$dtstr]/"
-	mkdir -p "backups/backup-[$dtstr]/dunst/"
-	mkdir -p "backups/backup-[$dtstr]/waybar/"
-	mkdir -p "backups/backup-[$dtstr]/sway/"
-	mkdir -p "backups/backup-[$dtstr]/swaylock/"
+	mkdir -p "backups/backup-[$dtstr]/.root/"
 	# copy root config files to backup
-	sudo cp /etc/xdg/dunst/dunstrc "backups/backup-[$dtstr]/dunst/"
-	sudo cp /etc/xdg/waybar/config "backups/backup-[$dtstr]/waybar/"
-	sudo cp /etc/xdg/waybar/style.css "backups/backup-[$dtstr]/waybar/"
-	sudo cp /etc/sway/config "backups/backup-[$dtstr]/sway/config-[_etc_sway]"
-	sudo cp /etc/swaylock/config "backups/backup-[$dtstr]/swaylock/config-[_etc_swaylock]"
+	cp -r /etc/xdg/dunst/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/xdg/waybar/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/sway/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/swaylock/ "backups/backup-[$dtstr]/.root/"
+	cp -r /usr/share/rofi/ "backups/backup-[$dtstr]/.root/"
 	# copy user config files to backup
-	cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
-	cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
+	cp -r ~/.config/dunst/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/waybar/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/sway/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/swaylock/ "backups/backup-[$dtstr]/"
 	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
-	
-	# copy wallpapers to ~/Pictures
-	mkdir -p ~/Pictures/sway-wallpapers/
-	sudo cp -r assets/wallpapers/ ~/Pictures/sway-wallpapers/
-	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"	
-	# copy v1-bw-brutalist files to system
-	sudo cp v1-bw-brutalist/dunst/dunstrc /etc/xdg/dunst/
-	sudo cp v1-bw-brutalist/waybar/config /etc/xdg/waybar/
-	sudo cp v1-bw-brutalist/waybar/style.css /etc/xdg/waybar/
-	cp v1-bw-brutalist/sway/config ~/.config/sway/
-	cp v1-bw-brutalist/swaylock/config ~/.config/swaylock/
-	echo "All 'v1-bw-brutalist' config files copied to default config locations."
-	# reload wm
-	echo "Reloading sway..."
-	swaymsg reload
-	pkill dunst
-	echo "Configs have been applied."
-elif [ $choice == "20" ]; then
-	# make backup directory
-	mkdir -p "backups/"
-	mkdir -p "backups/backup-[$dtstr]/"
-	mkdir -p "backups/backup-[$dtstr]/dunst/"
-	mkdir -p "backups/backup-[$dtstr]/waybar/"
-	mkdir -p "backups/backup-[$dtstr]/sway/"
-	mkdir -p "backups/backup-[$dtstr]/swaylock/"
-	# copy root config files to backup
-	sudo cp /etc/xdg/dunst/dunstrc "backups/backup-[$dtstr]/dunst/"
-	sudo cp /etc/xdg/waybar/config "backups/backup-[$dtstr]/waybar/"
-	sudo cp /etc/xdg/waybar/style.css "backups/backup-[$dtstr]/waybar/"
-	sudo cp /etc/sway/config "backups/backup-[$dtstr]/sway/config-[_etc_sway]"
-	sudo cp /etc/swaylock/config "backups/backup-[$dtstr]/swaylock/config-[_etc_swaylock]"
-	# copy user config files to backup
-	cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
-	cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
-	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
-
-	# copy wallpapers to ~/Pictures
-	mkdir -p ~/Pictures/sway-wallpapers/
-	sudo cp -r assets/wallpapers/ ~/Pictures/sway-wallpapers/
-	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"		
-	# copy v2-bw-softened files to system
-	sudo cp v2-bw-softened/dunst/dunstrc /etc/xdg/dunst/
-	sudo cp v2-bw-softened/waybar/config /etc/xdg/waybar/
-	sudo cp v2-bw-softened/waybar/style.css /etc/xdg/waybar/
-	cp v2-bw-softened/sway/config ~/.config/sway/
-	cp v2-bw-softened/swaylock/config ~/.config/swaylock/
-	echo "All 'v2-bw-softened' config files copied to default config locations.\nReloading sway..."
-	swaymsg reload
-	pkill dunst
-	echo "Configs have been applied."
-elif [ $choice == "30" ]; then
-	# make backup directory
-	mkdir -p "backups/"
-	mkdir -p "backups/backup-[$dtstr]/"
-	mkdir -p "backups/backup-[$dtstr]/dunst/"
-	mkdir -p "backups/backup-[$dtstr]/waybar/"
-	mkdir -p "backups/backup-[$dtstr]/sway/"
-	mkdir -p "backups/backup-[$dtstr]/swaylock/"
-	# copy root config files to backup
-	sudo cp /etc/xdg/dunst/dunstrc "backups/backup-[$dtstr]/dunst/"
-	sudo cp /etc/xdg/waybar/config "backups/backup-[$dtstr]/waybar/"
-	sudo cp /etc/xdg/waybar/style.css "backups/backup-[$dtstr]/waybar/"
-	sudo cp /etc/sway/config "backups/backup-[$dtstr]/sway/config-[_etc_sway]"
-	sudo cp /etc/swaylock/config "backups/backup-[$dtstr]/swaylock/config-[_etc_swaylock]"
-	# copy user config files to backup
-	cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
-	cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
-	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
-
-	# copy wallpapers to ~/Pictures
-	mkdir -p ~/Pictures/sway-wallpapers/
-	cp -r assets/wallpapers/* ~/Pictures/sway-wallpapers
-	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"
-	# copy v3-light-minimal files to system
-	sudo cp v3-light-minimal/dunst/dunstrc /etc/xdg/dunst/
-	sudo cp v3-light-minimal/waybar/config /etc/xdg/waybar/
-	sudo cp v3-light-minimal/waybar/style.css /etc/xdg/waybar/
-	cp v3-light-minimal/sway/config ~/.config/sway/
-	cp v3-light-minimal/swaylock/config ~/.config/swaylock/
-	echo "All 'v3-light-minimal' config files copied to default config locations.\nReloading sway..."
-	swaymsg reload
-	pkill dunst
-	echo "Configs have been applied."
-elif [ $choice == "40" ]; then
-	# make backup directory
-	mkdir -p "backups/"
-	mkdir -p "backups/backup-[$dtstr]/"
-	mkdir -p "backups/backup-[$dtstr]/dunst/"
-	mkdir -p "backups/backup-[$dtstr]/waybar/"
-	mkdir -p "backups/backup-[$dtstr]/sway/"
-	mkdir -p "backups/backup-[$dtstr]/swaylock/"
-	# copy root config files to backup
-	sudo cp /etc/xdg/dunst/dunstrc "backups/backup-[$dtstr]/dunst/"
-	sudo cp /etc/xdg/waybar/config "backups/backup-[$dtstr]/waybar/"
-	sudo cp /etc/xdg/waybar/style.css "backups/backup-[$dtstr]/waybar/"
-	sudo cp /etc/sway/config "backups/backup-[$dtstr]/sway/config-[_etc_sway]"
-	sudo cp /etc/swaylock/config "backups/backup-[$dtstr]/swaylock/config-[_etc_swaylock]"
-	# copy user config files to backup
-	cp ~/.config/sway/config "backups/backup-[$dtstr]/sway/"
-	cp ~/.config/swaylock/config "backups/backup-[$dtstr]/swaylock/"
-	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
-
 	# copy wallpapers to ~/Pictures
 	mkdir -p ~/Pictures/sway-wallpapers/
 	cp -r assets/wallpapers/* ~/Pictures/sway-wallpapers
 	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"
 	# copy v4-dark-minimal files to system
-	sudo cp v4-dark-minimal/dunst/dunstrc /etc/xdg/dunst/
-	sudo cp v4-dark-minimal/waybar/config /etc/xdg/waybar/
-	sudo cp v4-dark-minimal/waybar/style.css /etc/xdg/waybar/
-	cp v4-dark-minimal/sway/config ~/.config/sway/
-	cp v4-dark-minimal/swaylock/config ~/.config/swaylock/
-	echo "All 'v4-dark-minimal' config files copied to default config locations.\nReloading sway..."
+	cp -r brutalist-bw/dunst/* ~/.config/dunst/
+	cp -r brutalist-bw/waybar/* ~/.config/waybar/
+	cp -r brutalist-bw/sway/* ~/.config/sway/
+	cp -r brutalist-bw/swaylock/* ~/.config/swaylock/
+	### sudo cp -r brutalist-bw/rofi/* /usr/share/rofi/
+	echo "All 'brutalist-bw' config files copied to default config locations."
+	echo "Reloading sway..."
 	swaymsg reload
 	pkill dunst
-	echo "Configs have been applied."
 
+	### TODO: Add operation success condition before echo
+	echo "Configs have been applied."
+elif [ $choice == "20" ]; then
+	# make backup directory
+	mkdir -p "backups/backup-[$dtstr]/"
+	mkdir -p "backups/backup-[$dtstr]/.root/"
+	# copy root config files to backup
+	cp -r /etc/xdg/dunst/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/xdg/waybar/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/sway/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/swaylock/ "backups/backup-[$dtstr]/.root/"
+	cp -r /usr/share/rofi/ "backups/backup-[$dtstr]/.root/"
+	# copy user config files to backup
+	cp -r ~/.config/dunst/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/waybar/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/sway/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/swaylock/ "backups/backup-[$dtstr]/"
+	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
+	# copy wallpapers to ~/Pictures
+	mkdir -p ~/Pictures/sway-wallpapers/
+	cp -r assets/wallpapers/* ~/Pictures/sway-wallpapers
+	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"
+	# copy v4-dark-minimal files to system
+	cp -r cards-bw/dunst/* ~/.config/dunst/
+	cp -r cards-bw/waybar/* ~/.config/waybar/
+	cp -r cards-bw/sway/* ~/.config/sway/
+	cp -r cards-bw/swaylock/* ~/.config/swaylock/
+	### sudo cp -r cards-bw/rofi/* /usr/share/rofi/
+	echo "All 'cards-bw' config files copied to default config locations."
+	echo "Reloading sway..."
+	swaymsg reload
+	pkill dunst
+
+	### TODO: Add operation success condition before echo
+	echo "Configs have been applied."
+elif [ $choice == "30" ]; then
+	# make backup directory
+	mkdir -p "backups/backup-[$dtstr]/"
+	mkdir -p "backups/backup-[$dtstr]/.root/"
+	# copy root config files to backup
+	cp -r /etc/xdg/dunst/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/xdg/waybar/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/sway/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/swaylock/ "backups/backup-[$dtstr]/.root/"
+	cp -r /usr/share/rofi/ "backups/backup-[$dtstr]/.root/"
+	# copy user config files to backup
+	cp -r ~/.config/dunst/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/waybar/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/sway/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/swaylock/ "backups/backup-[$dtstr]/"
+	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
+	# copy wallpapers to ~/Pictures
+	mkdir -p ~/Pictures/sway-wallpapers/
+	cp -r assets/wallpapers/* ~/Pictures/sway-wallpapers
+	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"
+	# copy v4-dark-minimal files to system
+	cp -r fluid-light/dunst/* ~/.config/dunst/
+	cp -r fluid-light/waybar/* ~/.config/waybar/
+	cp -r fluid-light/sway/* ~/.config/sway/
+	cp -r fluid-light/swaylock/* ~/.config/swaylock/
+	### sudo cp -r fluid-light/rofi/* /usr/share/rofi/
+	echo "All 'fluid-light' config files copied to default config locations."
+	echo "Reloading sway..."
+	swaymsg reload
+	pkill dunst
+
+	### TODO: Add operation success condition before echo
+	echo "Configs have been applied."
+elif [ $choice == "40" ]; then
+	# make backup directory
+	mkdir -p "backups/backup-[$dtstr]/"
+	mkdir -p "backups/backup-[$dtstr]/.root/"
+	# copy root config files to backup
+	cp -r /etc/xdg/dunst/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/xdg/waybar/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/sway/ "backups/backup-[$dtstr]/.root/"
+	cp -r /etc/swaylock/ "backups/backup-[$dtstr]/.root/"
+	cp -r /usr/share/rofi/ "backups/backup-[$dtstr]/.root/"
+	# copy user config files to backup
+	cp -r ~/.config/dunst/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/waybar/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/sway/ "backups/backup-[$dtstr]/"
+	cp -r ~/.config/swaylock/ "backups/backup-[$dtstr]/"
+	echo "Existing config files copied to sway-configs/backups/backup-[$dtstr]/"
+	# copy wallpapers to ~/Pictures
+	mkdir -p ~/Pictures/sway-wallpapers/
+	cp -r assets/wallpapers/* ~/Pictures/sway-wallpapers
+	echo "Copied wallpapers to ~/Pictures/sway-wallpapers/"
+	# copy v4-dark-minimal files to system
+	cp -r fluid-dark/dunst/* ~/.config/dunst/
+	cp -r fluid-dark/waybar/* ~/.config/waybar/
+	cp -r fluid-dark/sway/* ~/.config/sway/
+	cp -r fluid-dark/swaylock/* ~/.config/swaylock/
+	### sudo cp -r fluid-dark/rofi/* /usr/share/rofi/
+	echo "All 'fluid-dark' config files copied to default config locations."
+	echo "Reloading sway..."
+	swaymsg reload
+	pkill dunst
+
+	### TODO: Add operation success condition before echo
+	echo "Configs have been applied."
 elif [ $choice == "e" ]; then
 	echo "Exiting..."
 fi
