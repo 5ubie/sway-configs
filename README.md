@@ -1,7 +1,7 @@
 # A Collection of Sway Config Files
-Includes several "themes" which include my personal configs for `sway`, `swaylock(-effects)`, `waybar` and `dunst`.
+Includes several themes which include my personal configs for `sway`, `swaylock(-effects)`, `waybar`, `dunst` and `rofi`.
 
-There are no dependencies apart from the above packages and their dependencies. The `sway` configs contain references to [`grim`](https://github.com/emersion/grim) (`bindsym $mod+Shift+p`), [`rofi`](https://github.com/davatorium/rofi) (default launcher), [`kitty`](https://github.com/kovidgoyal/kitty) (terminal), and have a few window assignments. Modify these settings if needed.
+There are no dependencies apart from the above packages and their dependencies. The `sway` configs contain references to [`grim`](https://github.com/emersion/grim) (`bindsym $mod+Shift+p`), [`kitty`](https://github.com/kovidgoyal/kitty) (terminal), and have a few window assignments. Modify these settings if needed.
 
 My system font is `IBM Plex Sans` which should be downloadable through your package manager, but is also available [here](https://github.com/IBM/plex/releases/tag/v6.4.0).
 ## Themes
@@ -56,6 +56,7 @@ Single digit options (i.e. `1` or `2`) were made to make managing this repositor
 - [x] Handle included wallpaper better: have script copy to a designated directory, reflect in configs
 - [x] Add a handful of extra wallpaper options
 - [x] Add rofi themes + script implementation
+- [ ] Incorporate some gradients and transitions from `fluid-dark` into `fluid-dark`
 - [ ] Clean up config and .css files - more consistent and readable
 - [ ] Make new `sway` configs that omit modified input/output/keybind settings, add respective install options in the script
 - [ ] *Make some more colorful themes with more eyecandy*
